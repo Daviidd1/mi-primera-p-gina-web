@@ -1,39 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Página Web</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Personal</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    /* Estilos específicos para secciones */
+    section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    section h2 {
+      color: #333;
+    }
+
+    section ul {
+      margin-top: 10px;
+    }
+
+    section li {
+      margin-bottom: 10px;
+    }
+
+    section li h3 {
+      margin-bottom: 5px;
+    }
+
+    /* Estilos para el encabezado y el pie de página */
+    header {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    /* Estilos para la imagen en la cabecera */
+    header img {
+    max-width: 150px; /* Ancho máximo deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Para evitar espacios en blanco no deseados */
+    margin: left; /* Centra la imagen horizontalmente */
+    border-radius: 50%;
+}
+
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #888;
+    }
+
+    /* Colores de fondo para las secciones */
+    .seccion-1 {
+      background-color:#FDE3A7; 
+    }
+
+    .seccion-2 {
+      background-color:#FFD1DC; 
+    }
+
+    .seccion-3 {
+      background-color:#AEC6CF; 
+    }
+
+    .seccion-4 {
+      background-color:#77DD77; 
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a Mi Página Web</h1>
+    <img src="C:\Users\LENOVO\Pictures\Eduard David Vera Díaz.jpeg" alt="">
+    <h1>Eduard David Vera Díaz</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#acerca-de">Acerca de</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <section id="inicio">
-      <h2>¡Hola Mundo!</h2>
-      <p>Bienvenido a mi primera página web. Aquí encontrarás información interesante sobre diversos temas</p>
+    <section class="seccion-1">
+      <h2>Biografía</h2>
+      <p>Apasionado por la ciencia y la tecnología, buscando crear soluciones innovadoras a través de la programación. En constante búsqueda de desafíos y aprendizaje.</p>
     </section>
-    <section id="acerca-de"></section>
-      <h2>Sobre mí</h2>
-      <p>Hola, soy Eduard David Vera Díaz, un apasionado del desarrollo web y me encanta aprender nuevas tecnologías. ¡Espero que disfrutes de mi página web!</p>
+
+    <section class="seccion-2">
+      <h2>Experiencia Laboral</h2>
+      <ul>
+        <li>
+          <h3>Nombre de la Empresa</h3>
+          <p>Descripción breve de tus responsabilidades y logros en la empresa.</p>
+        </li>
+        <li>
+          <h3>Otra Empresa</h3>
+          <p>Descripción breve de tus responsabilidades y logros en esta empresa.</p>
+        </li>
+      </ul>
     </section>
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Ponte en contacto conmigo a través de mi correo electrónico o redes sociales.¡Estoy ansioso por escucharte!</p>
+
+    <section class="seccion-3">
+      <h2>Proyectos Destacados</h2>
+      <ul>
+        <li>
+          <h3>Nombre del Proyecto</h3>
+          <p>Descripción breve del proyecto y tu contribución específica.</p>
+        </li>
+        <li>
+          <h3>Otro Proyecto</h3>
+          <p>Descripción breve del proyecto y tu contribución específica.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="seccion-4">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>...</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>Derechos de Autor &copy; 2023 - Mi Página Web</p>
+    <p>Derechos de autor &copy; 2023 | Mi Nombre</p>
   </footer>
 </body>
 </html>
