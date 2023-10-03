@@ -14,7 +14,7 @@
 
     h1 {
       font-size: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     h2 {
@@ -25,12 +25,22 @@
     p {
       font-size: 16px;
       line-height: 1.5;
+      max-width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     ul {
-      list-style-type: disc;
-      margin-left: 20px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
     }
+
+    li {
+    display: inline; /* Hace que los elementos li se muestren en línea (uno al lado del otro) */
+    margin-right: 10px;
+  }
 
     /* Estilos específicos para secciones */
     section {
@@ -57,19 +67,20 @@
 
     /* Estilos para el encabezado y el pie de página */
     header {
-      text-align: left;
-      margin-bottom: 30px;
+      padding: 50px;
+      background-color: #FFD1DC;
+      text-align: center;
     }
 
     /* Estilos para la imagen en la cabecera */
-header img {
-  max-width: 150px; /* Ancho máximo deseado */
-  height: auto; /* Altura automática para mantener la proporción */
-  display: block; /* Para evitar espacios en blanco no deseados */
-  margin: left; 
-  border-radius: 50%;
-}
-
+    header img {
+    max-width: 150px; /* Ancho máximo deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 50%;
+    display: inline-block; /* Para evitar espacios en blanco no deseados */
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    }
 
 
     footer {
@@ -80,18 +91,14 @@ header img {
 
     /* Colores de fondo para las secciones */
     .seccion-1 {
-      background-color:#FDE3A7; 
-    }
-
-    .seccion-2 {
       background-color:#FFD1DC; 
     }
 
-    .seccion-3 {
+    .seccion-2 {
       background-color:#AEC6CF; 
     }
 
-    .seccion-4 {
+    .seccion-3 {
       background-color:#77DD77; 
     }
   </style>
@@ -100,21 +107,18 @@ header img {
   <header>
     <img src="https://github.com/Daviidd1/mi-primera-p-gina-web/blob/main/Im%C3%A1genes/Eduard%20David%20Vera%20D%C3%ADaz.jpeg?raw=true" alt="">
     <h1>Eduard David Vera Díaz</h1>
+    <p>Apasionado por la ciencia y la tecnología, buscando crear soluciones innovadoras a través de la programación. En constante búsqueda de desafíos y aprendizaje.</p>
     <ul>
       <!--Enlaces a redes sociales-->
       <li><a href="https://www.facebook.com/profile.php?id=100002233105643" target="_blank">Facebook</a></li>
       <li><a href="https://twitter.com/david061199" target="_blank">Twitter</a></li>
       <li><a href="https://www.instagram.com/davidvdd1" target="_blank">Instagram</a></li>
     </ul>
+
   </header>
 
   <main>
     <section class="seccion-1">
-      <h2>Biografía</h2>
-      <p>Apasionado por la ciencia y la tecnología, buscando crear soluciones innovadoras a través de la programación. En constante búsqueda de desafíos y aprendizaje.</p>
-    </section>
-
-    <section class="seccion-2">
       <h2>Experiencia Laboral</h2>
       <ul>
         <li>
@@ -128,7 +132,7 @@ header img {
       </ul>
     </section>
 
-    <section class="seccion-3">
+    <section class="seccion-2">
       <h2>Proyectos Destacados</h2>
       <ul>
         <li>
@@ -142,7 +146,7 @@ header img {
       </ul>
     </section>
 
-    <section class="seccion-4">
+    <section class="seccion-3">
       <h2>Habilidades</h2>
       <ul>
         <li>HTML</li>
